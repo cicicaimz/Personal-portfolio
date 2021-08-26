@@ -1,10 +1,11 @@
 
 
 
-     .navbar {
-      background:transparent !important;
-      transition:0.75s ease;
-  }
-  .navbar.scrolled {
-      background:#000 !important;
-  }
+    .fixed-top {
+      background: transparent !important;
+      transition: 5s ease-in-out;
+    }
+
+    .fixed-top.scrolled {
+      background: lightgray!important;
+    }

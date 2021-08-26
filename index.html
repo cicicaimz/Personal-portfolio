@@ -12,33 +12,30 @@
   </head>
   <body>
     <!--navbar-->
-    <!--homepage background image-->
-    <div class="card bg-dark border-0">
-      <img class="card-img img-fluid" src="images/shanghai.jpg" alt="card image">
-      
-      <nav class="navbar fixed-top navbar-expand-md bg-dark">
+    <nav class="navbar fixed-top navbar-expand-md bg-dark">
 
-        <a class="d-none d-md-block navbar-brand text-dark" href="#"><b><h2>Cici Cai</h2></b></a>
+        <a class="d-none d-md-block navbar-brand text-dark" href="#"><b><h4>Cici Cai</h4></b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <a class="navbar-brand text-dark" href="#">Cici Cai</a>
         </button>
   
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav nav-pills">
-             <li class="nav-item"><a class="nav-link bg-gradient-primary text-dark" href="#"><b>Home</b></a></li>
-             <li class="nav-item"><a class="nav-link bg-gradient-primary text-dark" href="#ABOUT"><b>About</b></a></li>
-             <li class="nav-item"><a class="nav-link bg-gradient-primary text-dark" href="#PORTFOLIO"><b>Portfolio</b></a></li>
-             <li class="nav-item"><a class="nav-link bg-gradient-primary text-dark" href="#CONTACT"><b>Contact</b></a></li>
+             <li class="nav-item"><a class="nav-link  text-dark" href="#"><b>Home</b></a></li>
+             <li class="nav-item"><a class="nav-link  text-dark" href="#ABOUT"><b>About</b></a></li>
+             <li class="nav-item"><a class="nav-link  text-dark" href="#PORTFOLIO"><b>Portfolio</b></a></li>
+             <li class="nav-item"><a class="nav-link  text-dark" href="#CONTACT"><b>Contact</b></a></li>
           </ul>
          
         </div>
      </nav>
-   </div>
+     <img class="mg-fluid w-100" src="images/shanghaismaller.jpg" alt="image">
+ 
 
 
    <!--about me profile picture and summary-->
   
-   <div class="container" id="ABOUT">
+   <div class="container pt-5" id="ABOUT">
       <div class="row">
          <div class="col-12 col-md-6">
            <img class="img-fluid" src="images/aboutmepicture.JPG">
@@ -105,7 +102,7 @@
 
 
 <!--portfolio-->
-<div class="bg-dark mt-4" id="PORTFOLIO">
+<div class="bg-dark mt-4 pt-5" id="PORTFOLIO">
   <h4 class="text-white text-center pt-5">PORTFOLIO</h4>
   <div class="container">
    <div class="row pt-5">
@@ -149,7 +146,7 @@
 </div>
 
 <!--contact-->
-<div class="bg-light" id="CONTACT">
+<div class="bg-light pt-5" id="CONTACT">
   <h4 class="text-center pt-5 pb-5">CONTACT</h4>
   <div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.225835348984!2d-75.55496898479704!3d39.734577679450325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6fd67099ff907%3A0xf152f3e80abfe697!2sChristina%20Landing%20Dr%2C%20Wilmington%2C%20DE%2019801!5e0!3m2!1sen!2sus!4v1629900161616!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
@@ -248,5 +245,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      $(window).scroll(function(){ $('nav').toggleClass('scrolled', $(this).scrollTop() > 800);
+      }); </script>
   </body>
 </html>
